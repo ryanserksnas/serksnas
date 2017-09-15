@@ -1,0 +1,235 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacific | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- I've added a link for FontAwesome icons for you! -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <!-- Don't forget to indent!
+  The shortcut to fix indentation:
+  Select all your HTML, then Edit > Lines > Auto Indent -->
+
+  <header>
+    <h1>PACIFIC</h1> 
+    <br><div id="sfd">Seafood Served Fresh Daily</div>
+    <nav>
+      <ul>
+        <li id="Home" onclick="scrollWinH()">Home</li>
+        <li id="Menu" onclick="scrollWin()">Menu</li>
+        <li id="Location" onclick="scrollWinL()">Location</li>
+        <li id="Reservations" onclick="scrollWinR()">Reservations</li>
+        <li id="Gallery" onclick="scrollWinG()">Gallery</li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!--   <section class="menu-header"> -->
+  <h2>MENU</h2>
+  <div class="menu-heads">
+    <ul>
+      <li id="Brunch"><h3>Brunch</h3></li>
+      <li id="Dinner"><h3>Dinner</h3></li> 
+      <li id="Drinks"><h3>Drinks</h3></li>
+    </ul>
+  </div>
+  <!--   </section> -->
+
+  <section class="brunch">
+    <div>
+      <h3>Onion Quiche</h3>
+      <p>quiche of caramelized onions, pickled vegetables, arugula</p>
+    </div>
+    <div>
+      <h3>Lox Bagel</h3>
+      <p>capers, tomato, cream cheese</p>
+    </div>
+    <div>
+      <h3>NY Bagel Plate</h3>
+      <p>smoked salmon, tomato, onion, cream cheese</p>
+    </div>
+    <div>
+      <h3>Smoked Salmon Benedict</h3>
+      <p>wild smoked salmon, poached eggs, english muffin</p>
+    </div>
+    <div>
+      <h3>Warm Quinoa</h3>
+      <p>blueberries, almonds, sweet cream</p>
+    </div>
+    <div>
+      <h3>Challah French Toast</h3>
+      <p>almonds, maple whipped cream</p>
+    </div>
+    <div id="brunch-img">
+      <img src="images/zeny-rosalina-205431.jpg">
+    </div>
+  </section>
+
+
+
+  <section class="dinner">
+    <div>
+      <h3>Primavera Salad</h3>
+      <p>tarugula, cherry tomato, shallot vinaigrette</p>
+    </div>
+    <div>
+      <h3>Grilled Calamari</h3>
+      <p>ttomato sauce, lemon</p>
+    </div>
+    <div>
+      <h3>Branzino</h3>
+      <p>cucumber, shallots, puffed brown rice</p>
+    </div>
+    <div>
+      <h3>Yellowfin Tuna</h3>
+      <p>aged balsamic and crispy fennel</p>
+    </div>
+    <div>
+      <h3>Maya Prawns</h3>
+      <p>corriander mayonnaise</p>
+    </div>
+    <div>
+      <h3>Cold Poached Lobster</h3>
+      <p>tomalley vinaigrette</p>
+    </div>
+    <div id="dinner-img">
+      <img src="images/javier-molina-207556.jpg">
+    </div>
+  </section>
+
+
+  <section class="drinks">
+    <div>
+      <h3>Manhattan</h3>
+      <p>trye whisky, sweet vermouth, bitters</p>
+    </div>
+    <div>
+      <h3>Dark &amp; Stormy</h3>
+      <p>tblack rum, ginger beer, lime</p>
+    </div>
+    <div>
+      <h3>Old Cuban</h3>
+      <p>taged rum, lime juice, bitters, champagne</p>
+    </div>
+    <div>
+      <h3>Negroni</h3>
+      <p>tgin, vermouth rosso, campari</p>
+    </div>
+    <div>
+      <h3>Bloody Mary</h3>
+      <p>tomato juice, vodka, tabasco, bacon bits</p>
+    </div>
+    <div>
+      <h3>Green &amp; Amber</h3>
+      <p>vodka, single-malt scotch, honey, lemon, green tea</p>
+    </div>
+    <div>
+      <h3>White Russian</h3>
+      <p>vodka, tia maria, heavy cream</p>
+    </div>
+    <div>
+      <h3>Sauvignon Blanc</h3>
+      <p>cloudy bay, new zealand, 2012</p>
+    </div>
+    <div id="drinks-img1">
+      <img src="images/jakub-dziubak-312759.jpg">
+    </div>
+    <div id="drinks-img2">
+      <img src="images/patrick-tomasso-235940.jpg">
+    </div>
+  </section>
+  <br>  
+  <!-- Add Slider images here -->
+  <div class="gallery">
+    <h1>GALLERY</h1>
+    <img src="images/carousel-1.jpg" id="img-gal"> 
+  </div>
+
+
+  <h1>LOCATION</h1>
+  <section class="location">
+
+    <div>
+     <h2>Phone</h2>
+     <p>(415) 243-1234</p>
+
+
+     <h2>Location</h2>
+     <p>30 Bolinas Ave</p>
+     <p>at Downtown Plaza</p>
+     <p>Bolinas, CA 94110</p>
+
+
+     <h2>Hours</h2>
+     <p>M-Th 5p–11p</p>
+     <p>F-Sa 12p–11p</p>
+     <p>Su 10a–11p</p>
+   </div>
+   <div>
+    <img src="images/map.png"> 
+  </div>
+
+</section>
+
+
+
+
+
+<!-- Add map image here -->
+<footer>
+  <div class="reservation-button">
+    <button>
+      Make Reservation
+    </button>
+  </div>
+    <div class="modal"> 
+      <div class="modal-box">
+        <form action="#">
+        <input type="text" placeholder="Full Name"><br><br>
+         <input type="text" placeholder="Email"><br><br>
+         <input type="text" id = "time" placeholder="Time"><br><br>
+         <button class="request-reservation" type="submit">Submit Request</button>
+       </form>
+     </div>
+  </div>
+</div>
+  <h2>Menu</h2>
+  <h2>Location</h2>
+  <h2>Reservations</h2>
+  <h2>Gallery</h2>
+  <h2>Phone</h2>
+  <!-- Google and add FontAwesome icons here! -->
+  <section class="social-icons">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+  </section>
+</footer>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+        <div class="firstname">
+        first name
+        </div>
+        <div class="lastname">
+        last name
+        </div>
+        <div class="email">
+        email
+        </div> -->

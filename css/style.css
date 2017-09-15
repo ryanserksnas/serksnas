@@ -1,0 +1,323 @@
+
+/*Import Raleway 400, 600 and 700 on line #1 (must be on first line)*/
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+}
+
+img {
+	max-width: 100%;
+}
+li{
+	list-style-type: none;
+	display: inline;
+	/*border-right: solid 1px; */
+	padding:2px;
+	color: #600710;
+}
+li:hover{
+	color: #AF1D2C;
+}
+.navcolor{
+	background-color: black;
+}
+
+ul{
+	text-align: center;
+}
+/* ----------------------------------------
+Add comments here for organization!!
+------------------------------------------- */
+header{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	background-image:url('../images/home-header.jpg');
+	background-size:cover;
+	color: white;
+	min-height: 100vh;
+	padding: 10px;
+
+}
+body{
+	margin:0px;
+}
+h1{
+	text-align: center;
+	font-size: 48px;
+	font-family:'Open Sans', sans-serif;
+	font-weight: bold;
+	/*text-shadow: 2px 2px black;	*/
+}
+h2{
+	text-align: center;
+	font-size: 50px;
+	font-family:'Open Sans', sans-serif;
+	font-weight: bold;
+	margin-bottom: 0px;	
+	/*text-shadow: 2px 2px black;	*/
+}
+h3{
+	font-size: 24px;
+	font-family:'Open Sans', sans-serif;
+	color:#600710;
+
+}
+p{
+	font-size: 12	px;
+	font-family:'Open Sans', sans-serif;
+}
+nav li{
+	/*margin-top: 0px;*/
+	padding: 25px;	
+}
+nav{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+	text-align: center;
+	/*background-color: ;*/
+	box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
+	transition: all 300ms ease-out;
+	z-index: 10;
+}
+.scrolled {
+	/* PART 1: Write styles here that you want to store and then add in JS when the user scrolls */
+	position: fixed;
+	top:0px;
+	z-index: 100;
+}
+
+.social-icons{
+	text-align: right;	
+}
+
+
+
+#sfd{
+	font-size:36px;
+}
+/*.menu-header	{
+	text-align: center
+}
+.menu-header h2{
+
+}
+.menu-header h3{
+	display:inline-block;
+	padding:10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	}*/
+
+
+	.brunch{
+		display: grid;
+		grid-template-columns:repeat(3,1fr);
+
+	}
+	.brunch{
+		display: grid;
+		grid-template-columns:repeat(3,1fr);
+		grid-template-rows:repeat(1,1fr);
+		text-align: left;
+	}
+	#brunch-img{
+		grid-column:2;
+	}
+
+	.brunch p{
+		font-size: 12px;
+		margin-top: 2px;
+		text-align: center;
+
+	}
+	.gallery{
+		margin-top: 250px;
+		margin-bottom: 300px; 
+	}
+
+	.brunch h3{
+		font-size: 20px;
+		margin-bottom: 0;
+		color:black;
+		text-align:center;
+	}
+	.dinner h3{
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+	.drinks h3{
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+
+	.menu-heads h3{
+		display: inline-block;
+		padding-right: 38px;
+		font-weight: normal;
+		font-style: italic;
+		margin: 0px;
+	}
+
+	.dinner{
+		display: grid;
+		grid-template-columns:repeat(3,1fr);
+		grid-template-rows:repeat(1,1fr);
+		text-align: center;
+	}
+	#dinner-img{
+		grid-column:2;
+	}
+	.dinner p{
+		font-size: 12px;
+		margin-top: 2px;
+
+	}
+	.dinner h3{
+		color:black;
+	}
+
+
+	.drinks{
+		display: grid;
+		grid-template-columns:repeat(4,1fr);
+		grid-template-rows:repeat(1,1fr);
+		text-align: center;
+	}
+	#drinks-img1{
+		grid-column:2;
+		padding: 5px;
+	}
+	#drinks-img2{
+		grid-column:3;
+		padding: 5px;
+	}
+	.drinks h3{
+		color:black;
+	}
+	.drinks p{
+		font-size:12px;
+		margin-top: 2px;
+		margin-bottom: 15px;
+	}
+
+	.location { 
+		display: grid;
+		grid-template-columns:1fr 2fr;
+		margin-bottom: 20px;	
+	}
+	.location h2, p{
+		margin-left: 25px;
+		margin-top: 0px;
+	}
+	.location h2{
+		text-align: left;
+		font-size: 26px;
+		margin-bottom: 15px;
+	}
+	.location p{
+		margin-left: 30px;
+	}
+	footer{
+		text-align: center;
+		background-color: black;
+		color:white;
+	}
+	.reservation-button{
+		background-color: gray;
+		padding:5px;
+	}
+	.reservation-button button{
+		background-color: #600710;
+		border:solid;
+		border-color:#600710;
+		font-size:15px;
+		margin: 15px;
+		color: white;	
+		font-weight: normal;
+		font-style:italic;
+		padding:4px;
+		border-radius: 4px;
+		transition: ease-out 0.3s;
+	}
+	.reservation-button button:hover{
+		color:black;
+		background-color: white;
+		border-color:#600710;
+	}
+
+
+	footer h2{
+		display:inline-block;
+		padding: 5px;
+		color: white;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+	header h1{
+		font-size: 90px;
+		margin-bottom: 0px;
+		color: white;	
+	}
+.modal{
+	position: fixed;
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	top:0;
+	z-index: 600;
+	display: none;
+}
+.modal-box{
+	position: fixed;
+	width: 50%;
+	height: 50%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 1000;
+	border:solid 3px;
+	margin-top: 175px;
+	margin-left: 350px;
+	color: black;
+}
+form{
+	margin-top: 100px;
+}
+.modal input{
+	width: 500px;
+	padding:10px;
+}
+/*.firstname{
+	margin-top: 150px;
+	background-color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 5px;
+}
+.lastname{
+	margin-top: 10px;
+	background-color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 5px;
+
+}
+.email{
+	margin-top: 10px;
+	background-color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 5px;
+
+}*/
+
+	@media screen and (max-width: 600px) {
+		header nav a{
+			margin: 10px;
+		}
+	}
