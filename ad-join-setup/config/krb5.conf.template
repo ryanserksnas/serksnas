@@ -1,0 +1,31 @@
+# Kerberos Configuration Template
+# This file is used by AD join scripts
+# Variables are replaced during installation
+
+[libdefaults]
+    default_realm = ${DOMAIN_REALM}
+    dns_lookup_realm = false
+    dns_lookup_kdc = true
+    ticket_lifetime = 24h
+    renew_lifetime = 7d
+    forwardable = true
+    rdns = false
+    pkinit_anchors = FILE:/etc/pki/tls/certs/ca-bundle.crt
+    spake_preauth_groups = edwards25519
+    default_ccache_name = KEYRING:persistent:%{uid}
+
+[realms]
+    ${DOMAIN_REALM} = {
+        kdc = ${DC_FQDN}
+        admin_server = ${DC_FQDN}
+        default_domain = ${DOMAIN_NAME}
+    }
+
+[domain_realm]
+    .${DOMAIN_NAME} = ${DOMAIN_REALM}
+    ${DOMAIN_NAME} = ${DOMAIN_REALM}
+
+[logging]
+    default = FILE:/var/log/krb5libs.log
+    kdc = FILE:/var/log/krb5kdc.log
+    admin_server = FILE:/var/log/kadmind.log

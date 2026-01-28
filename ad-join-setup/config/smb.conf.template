@@ -1,0 +1,37 @@
+# Samba AD DC Configuration Template
+# This file is used by setup-samba-ad-dc.sh
+# Variables are replaced during installation
+
+[global]
+    workgroup = ${DOMAIN_NETBIOS}
+    realm = ${DOMAIN_REALM}
+    netbios name = ${DC_HOSTNAME}
+    server role = active directory domain controller
+    dns forwarder = 8.8.8.8
+
+    # Logging
+    log file = /var/log/samba/log.%m
+    max log size = 50
+    log level = 1
+
+    # Security settings
+    server signing = mandatory
+    client signing = mandatory
+    ntlm auth = mschapv2-and-ntlmv2-only
+
+    # LDAP settings
+    ldap server require strong auth = no
+
+    # Kerberos settings
+    kerberos method = secrets and keytab
+
+    # Performance tuning
+    socket options = TCP_NODELAY IPTOS_LOWDELAY SO_RCVBUF=131072 SO_SNDBUF=131072
+
+[netlogon]
+    path = /var/lib/samba/sysvol/${DOMAIN_NAME}/scripts
+    read only = No
+
+[sysvol]
+    path = /var/lib/samba/sysvol
+    read only = No
